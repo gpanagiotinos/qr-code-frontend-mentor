@@ -67,10 +67,20 @@
         box-shadow: 15px 15px 20px 10px hsl(212, 45%, 87%);
       }
       .image {
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -khtml-border-radius: 15px;
         border-radius: 15px;
+        display: block;
+      }
+      img {
         height: 100%;
         width: 100%;
-        object-fit: contain;
+        object-fit: cover;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -khtml-border-radius: 15px;
+        border-radius: 15px;
       }
       .attribution {
         font-size: 11px;
@@ -81,7 +91,7 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
-      @media screen and  (max-width: 440px) {
+      @media screen and (max-width: 440px) {
         .card {
           width: 80%;
         }
@@ -95,30 +105,34 @@
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="card">
-        <img
-          class="image"
-          width="100%"
-          height="100%"
-          src="./images/image-qr-code.png"
-        />
-        <div class="text">
-          <p class="title">
-            Improve your front-end skills by building projects
-          </p>
-          <p class="subtitle">
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level
-          </p>
+    <main>
+      <div class="container">
+        <div class="card">
+          <div class="image">
+            <img
+              width="576"
+              height="576"
+              src="./images/image-qr-code.png"
+              alt="qr-code"
+            />
+          </div>
+          <div class="text">
+            <p class="title">
+              Improve your front-end skills by building projects
+            </p>
+            <p class="subtitle">
+              Scan the QR code to visit Frontend Mentor and take your coding
+              skills to the next level
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">gpanagiotinos@gmail.com</a>.
-    </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">gpanagiotinos@gmail.com</a>.
+      </div>
+    </main>
   </body>
 </html>
